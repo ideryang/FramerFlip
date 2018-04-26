@@ -14,15 +14,15 @@ A module to create card flip effect in Framer
 
 ### Manual
 
-1. Copy `MapboxJS.coffee` file on modules folder inside your Framer project
+1. Copy `FramerFlip.coffee` file on modules folder inside your Framer project
 2. Add this line on the top 
 ```coffeescript
-flipCard = require 'flipCard'
+FramerFlip = require 'FramerFlip'
 ```
 3. Add a `front image` + `back image` + `the perspective` + `animation curve`
 
 ```javascript
-flipCard.flipEffect(frontLayer, backLayer, 1600, "spring(300,20,0)")
+FramerFlip.flipEffect(frontLayer, backLayer, 1600, "spring(300,20,0)")
 ```
 
 ### Customization
