@@ -4,7 +4,7 @@
 ![Maintenance](https://img.shields.io/maintenance/yes/2018.svg)
 
 A module to create card flip effect in Framer
-
+![FramerFlip gif](/FramerFlip.gif?raw=true)
 
 ### Installation
 <a href='https://open.framermodules.com/Symbols'>
@@ -19,17 +19,39 @@ A module to create card flip effect in Framer
 ```coffeescript
 FramerFlip = require 'FramerFlip'
 ```
-3. Add a `front image` + `back image` + `the perspective` + `animation curve`
+3. Add a `frontLayer` + `backLayer`  + `animation curve`
 
 ```javascript
-FramerFlip.flipEffect(frontLayer, backLayer, 1600, "spring(300,20,0)")
+FramerFlip.flipEffect(frontLayer, backLayer, "Spring(damping: 0.9)")
 ```
 
 ### Customization
-* `Front image` _image_ : The front image layer
-* `Back image` _image_ : The back image layer
-* `Perspective` _Integer_ : The smaller the number is, the more perspective you will get
-* `Animation curve` _String_ : The curve for animation
+* `frontLayer` : The front image layer
+* `backLayer` : The back image layer
+* `Animation curve` : The curve for animation
 
 
 ### Sample project
+```coffeescript
+FramerFlip = require 'FramerFlip'
+
+# Set the screen background colour
+Screen.backgroundColor = "#EBEBEB"
+
+# Add frontLayer
+frontLayer=new Layer
+	borderRadius: 20
+	width: 340
+	height: 214
+	backgroundColor: "#4CD964"
+
+# Add backLayer
+backLayer=new Layer
+	width: 340
+	height: 214
+	borderRadius: 20
+	backgroundColor: "#006DE2"
+
+FramerFlip.FramerFlip(frontLayer, backLayer, "Spring(damping: 0.9)")
+
+```
