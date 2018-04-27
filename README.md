@@ -33,6 +33,3 @@ FramerFlip.flipEffect(frontLayer, backLayer, 1600, "spring(300,20,0)")
 
 
 ### Sample project
-<a href='https://framer.cloud/FmFdE' target="_blank">Framer prototype</a>
-
-![mapbox gif 2](/mapbox.gif?raw=true)
