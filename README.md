@@ -22,7 +22,7 @@ FramerFlip = require 'FramerFlip'
 3. Add a `frontLayer` + `backLayer`  + `animation curve`
 
 ```javascript
-FramerFlip.flipEffect(frontLayer, backLayer, "Spring(damping: 0.9)")
+FramerFlip.FramerFlip(frontLayer, backLayer, "Spring(damping: 0.9)")
 ```
 
 ### Customization
