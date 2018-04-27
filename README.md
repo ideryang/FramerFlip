@@ -15,7 +15,7 @@ A module to create card flip effect in Framer
 ### Manual
 
 1. Copy `FramerFlip.coffee` file on modules folder inside your Framer project
-2. Add this line on the top 
+2. Add this line on the top
 ```coffeescript
 FramerFlip = require 'FramerFlip'
 ```
@@ -32,6 +32,8 @@ FramerFlip.FramerFlip(frontLayer, backLayer, "Spring(damping: 0.9)")
 
 
 ### Sample project
+Either copy the code below to the framer project (make sure that the module had been put inside), or download the 'FramerFlip_Example.framer' file in the file list.
+
 ```coffeescript
 FramerFlip = require 'FramerFlip'
 
